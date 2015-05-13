@@ -2205,7 +2205,7 @@ $(document).ready(function(){
 
 		// determine which elements are in view
 //        + 60 accounts for fixed nav
-		var intersections = findElements(top+offset.top + 200, right+offset.right, bottom+offset.bottom, left+offset.left);
+		var intersections = findElements(top+offset.top + 64, right+offset.right, bottom+offset.bottom, left+offset.left);
 		$.each(intersections, function(i, element) {
 
 			var lastTick = element.data('scrollSpy:ticks');
@@ -2315,7 +2315,7 @@ $(document).ready(function(){
 
 //          offset - 200 allows elements near bottom of page to scroll
 			
-	    	$('html, body').animate({ scrollTop: offset - 200 }, {duration: 400, queue: false, easing: 'easeOutCubic'});
+	    	$('html, body').animate({ scrollTop: offset - 64 }, {duration: 400, queue: false, easing: 'easeOutCubic'});
 			
 		  });
 		});

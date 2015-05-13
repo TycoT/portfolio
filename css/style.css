@@ -11,12 +11,94 @@ nav .brand-logo {
   color: #444;
 }
 
+body {
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:16px;
+}
+
+.droid-serif {
+  font-family: "droid-serif";
+  font-style: italic;
+  font-size:18px;
+}
+
+.montserrat {
+  font-family: "Montserrat";
+}
+
+.parallax-container {
+  min-height:500px !important;
+}
+
+#background1 {
+  height:1000px;
+}
+
+
+
+.bold-600 {
+  font-weight:600;
+}
+
+.bold-800 {
+  font-weight:800;
+}
+
+.logo {
+  width: 62px;
+}
+
+.lighter {
+  font-weight:300;
+}
+
+.italic {
+  font-style: italic; 
+}
+
+.nav-role {
+  width:200px;
+  position:absolute;
+  top:-13px;
+  left: 72px;
+}
+
+.nav-name {
+  font-size:16px;
+}
+
+.nav-title-pink {
+  color:rgb(249,38,101);
+}
+
+.nav-title {
+  font-size:16px;
+  position:absolute;
+  top:22px;
+}
+
+.tech-icons {
+  width:300px;
+}
+
+#intro-banner {
+  margin-top:135px;
+}
+
+#intro-banner-arrow {
+  margin-top:500px;
+}
+
 p {
   line-height: 2rem;
 }
 
+.profile-picture {
+  border:5px solid white;
+}
+
 .button-collapse {
-  color: #26a69a;
+  color: rgb(249,38,101);
 }
 
 .parallax-container {
@@ -37,12 +119,26 @@ p {
   #index-banner .section {
     top: 10%;
   }
+
+  #intro-banner {
+    margin-top:-90px;
+  }
+
+  #intro-banner-arrow {
+    margin-top: 0px;
+  }
+
+  .nav-role {
+    opacity:0;
+  }
 }
 
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
+
+
 }
 
 
@@ -52,4 +148,8 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+.side-nav {
+  background-color:#424242 !important;
 }
