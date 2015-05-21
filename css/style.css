@@ -26,10 +26,6 @@ body {
   font-family: "Montserrat";
 }
 
-.parallax-container {
-  min-height:500px !important;
-}
-
 #background1 {
   height:1000px;
 }
@@ -78,7 +74,7 @@ body {
 }
 
 .tech-icons {
-  width:300px;
+  max-width:300px;
 }
 
 #intro-banner {
@@ -86,7 +82,7 @@ body {
 }
 
 #intro-banner-arrow {
-  margin-top:500px;
+  /*margin-top:500px;*/
 }
 
 p {
@@ -102,7 +98,7 @@ p {
 }
 
 .parallax-container {
-  min-height: 380px;
+  min-height: 960px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -111,17 +107,16 @@ p {
     width: 100%;
   }
 
+#projects {
+  min-height:480px;
+}
+
+/*IPAD*/
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
+
 
   #intro-banner {
-    margin-top:-90px;
+    margin-top:160px;
   }
 
   #intro-banner-arrow {
@@ -131,13 +126,39 @@ p {
   .nav-role {
     opacity:0;
   }
+
+  .parallax-container {
+    min-height:960px;
+  }
+  
 }
 
+/*MOBILE*/
 @media only screen and (max-width : 600px) {
   #index-banner .section {
     top: 0;
   }
 
+  .logo {
+    width: 52px;
+  }
+
+  #intro-banner {
+    margin-top: 0;
+  }
+
+  .parallax-container .section {
+    position: absolute;
+    top: 0%;
+  }
+
+  .parallax-container{
+    min-height:590px;
+  }
+
+  .tech-icons {
+    width:32.66% !important;
+  }
 
 }
 
@@ -148,8 +169,15 @@ p {
 
 footer.page-footer {
   margin: 0;
+  padding-top: 0px
 }
 
 .side-nav {
   background-color:#424242 !important;
+}
+
+
+#contact-me-row {
+  max-width: 600px;
+  margin: auto;
 }
