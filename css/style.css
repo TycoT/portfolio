@@ -11,9 +11,27 @@ nav .brand-logo {
   color: #444;
 }
 
+nav ul li:hover, nav ul li.active {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+
 body {
   font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size:16px;
+}
+
+.pink-text {
+  color:rgb(249,38,101);
+  font-weight:600;
+}
+
+.nav-highlight {
+  outline: 0;
+  color: rgb(249,38,101) !important;
+}
+
+.nav-outline {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .droid-serif {
